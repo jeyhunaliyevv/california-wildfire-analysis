@@ -1,77 +1,32 @@
-# CALIFORNIA-FIRE-# Project Name: **Fire Damage Detection and Analysis Model**
+# Fire Damage Detection and Analysis (California Wildfire)
 
-## Project Description
-
-This project aims to detect and analyze the geographical and structural characteristics of buildings damaged by fires. The objective is to model the damage status of structures exposed to fires using data cleaning, visualization, and machine learning techniques.
-
-## Directory Structure
-
-- **notebooks/**: Folder containing notebook files.
-- **data/**: Folder containing data files.
-- **requirements.txt**: File listing the required libraries.
-- **README.md**: Basic information about the project.
+## Overview
+This project analyzes geographical and structural features of buildings affected by wildfires and builds a baseline machine learning model to predict fire damage status.
 
 ## Dataset
+The dataset includes location and building attributes (e.g., X/Y coordinates, building type, damage status).  
+> Note: If the dataset cannot be shared publicly, please add a short note on how to obtain it.
 
-The dataset used contains geographical and structural features related to fire damage (X and Y coordinates, building type, damage status, etc.).
-
-## Technologies and Libraries Used
-
-- **Python 3.x**
-- **NumPy**
-- **Pandas**
-- **Matplotlib**
-- **Seaborn**
-- **Scikit-Learn**
-
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone <REPO_URL>
-   cd <REPO_NAME>
-   ```
-2. Install the required libraries:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run the notebook file:
-   ```bash
-   jupyter notebook
-   ```
-
-## Project Steps
-
-### 1. Data Reading
-
-The dataset was read in CSV format and its basic features were examined.
-
-### 2. Data Cleaning
-
-Missing values and data types were analyzed and necessary corrections were made.
-
-### 3. Data Visualization
-
-Graphs were used to visualize building types and damage statuses.
-
-### 4. Data Encoding
-
-Categorical variables were encoded to prepare for machine learning algorithms.
-
-### 5. Modeling
-
-A Random Forest algorithm was used to build and evaluate a damage prediction model.
+## Approach
+- Data loading and basic profiling
+- Data cleaning (missing values, data types)
+- Exploratory Data Analysis (EDA) and visualizations
+- Encoding categorical variables
+- Baseline modeling with **Random Forest**
+- Model evaluation (train/test split)
 
 ## Results
+- Model performance: **TBD** (add accuracy / F1 / ROC-AUC if available)
+- Key insights: damage distribution by building type and location patterns
 
-- The damage prediction accuracy was %X.
-- Visualization provided insights into damage and building type distributions.
+## Repository Structure
+- `notebooks/` – analysis and modeling notebooks
+- `data/` – dataset files (or instructions to download)
+- `requirements.txt` – Python dependencies
 
-## Contributions
-
-To contribute, please create a **pull request** or open an issue.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
+## How to Run
+```bash
+git clone <REPO_URL>
+cd <REPO_NAME>
+pip install -r requirements.txt
+jupyter notebook
