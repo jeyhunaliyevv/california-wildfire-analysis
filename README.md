@@ -26,7 +26,5 @@ The dataset includes location and building attributes (e.g., X/Y coordinates, bu
 
 ## How to Run
 ```bash
-git clone <REPO_URL>
-cd <REPO_NAME>
 pip install -r requirements.txt
 jupyter notebook
