@@ -1,30 +1,104 @@
-# Fire Damage Detection and Analysis (California Wildfire)
+# 🔥 California Wildfire | Fire Damage Prediction
 
-## Overview
-This project analyzes geographical and structural features of buildings affected by wildfires and builds a baseline machine learning model to predict fire damage status.
+### Machine Learning & Geospatial Data Analysis
+
+## Project Overview
+
+This project explores wildfire-related building damage in California using exploratory data analysis and machine learning.
+
+The objective is to identify patterns associated with structural damage and develop a predictive model that estimates fire damage risk based on geographical and building characteristics.
+
+The project combines data preprocessing, feature engineering, geospatial analysis, and supervised machine learning.
 
 ## Dataset
-The dataset includes location and building attributes (e.g., X/Y coordinates, building type, damage status).  
-> Note: If the dataset cannot be shared publicly, please add a short note on how to obtain it.
 
-## Approach
-- Data loading and basic profiling
-- Data cleaning (missing values, data types)
-- Exploratory Data Analysis (EDA) and visualizations
-- Encoding categorical variables
-- Baseline modeling with **Random Forest**
-- Model evaluation (train/test split)
+The analysis uses a California wildfire damage dataset containing information about affected structures.
 
-## Results
-- Model performance: **TBD** (add accuracy / F1 / ROC-AUC if available)
-- Key insights: damage distribution by building type and location patterns
+Key features include:
+- Geographic coordinates (X/Y)
+- Building and structural characteristics
+- Building type
+- Fire damage status and severity
+- Location-based attributes
+
+**Data Availability:** The original dataset is not currently included in this repository. The analysis notebook demonstrates the methodology and modeling workflow.
+
+## Methodology
+
+**1. Data Preprocessing**
+- Data quality assessment and missing value handling
+- Data type validation and transformation
+- Categorical feature encoding
+- Feature selection and preparation
+
+**2. Exploratory Data Analysis**
+- Distribution of wildfire damage across structures
+- Comparison of damage patterns by building type
+- Analysis of geographical damage patterns
+- Visual exploration of relevant features
+
+**3. Machine Learning**
+- Random Forest classification
+- Train/test data splitting
+- Model training and prediction
+- Evaluation using classification metrics
+
+## Model Performance
+
+The Random Forest model was evaluated on a held-out test dataset.
+
+| Metric | Result |
+|---|---|
+| Algorithm | Random Forest |
+| ROC-AUC | Approximately 0.91–0.93 (recalled) |
+| Validation | Train/Test Split |
+| Task | Fire Damage Classification |
+
+*Note: The ROC-AUC range is based on previously observed results recalled by the project author. The exact score has not been independently reverified.*
+
+## Key Insights
+
+The analysis focuses on understanding how building characteristics and geographical patterns relate to wildfire damage.
+
+The project demonstrates the application of machine learning to disaster-related data and the use of predictive analytics to support risk assessment.
+
+## Technologies Used
+
+- Python
+- Pandas & NumPy
+- Scikit-learn
+- Random Forest
+- Matplotlib & Seaborn
+- Jupyter Notebook
 
 ## Repository Structure
-- `notebooks/` – analysis and modeling notebooks
-- `data/` – dataset files (or instructions to download)
-- `requirements.txt` – Python dependencies
 
-## How to Run
+- `notebooks/` — Data analysis and machine learning notebooks
+- `data/` — Dataset directory, where available
+- `requirements.txt` — Python dependencies, where provided
+
+## Running the Project
+
+Install the required Python libraries:
+
 ```bash
-pip install -r requirements.txt
+pip install pandas numpy scikit-learn matplotlib seaborn jupyter
+```
+
+Launch Jupyter Notebook:
+
+```bash
 jupyter notebook
+```
+
+Open the analysis notebook to explore the data processing, visualization, and modeling workflow.
+
+**Note:** Running the complete analysis requires access to the original dataset and updating its local file path.
+
+---
+
+**Project Category:** Machine Learning | Predictive Analytics | Geospatial Analysis
+
+**Author:** Jeyhun Aliyev
+
+**Professional Focus:** Data Scientist | AI/ML Engineer
